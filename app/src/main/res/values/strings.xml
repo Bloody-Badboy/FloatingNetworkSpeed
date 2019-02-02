@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Floating Network Speed</string>
+    <string name="start_btn_label">Start Network Speed Meter</string>
+    <string name="stop_btn_label">Stop Network Speed Meter</string>
+    <string name="already_running_toast">Service already running!</string>
+    <string name="not_running_toast">Service is not running!</string>
+    <string name="permission_dialog_title">Permission</string>
+    <string name="permission_dialog_msg">On 6.0 or in higher devices this app should be allowed to draw on top of other apps.In order to use the Floating Network Service please enable draw on top of other apps permission from the settings.</string>
+    <string name="permission_dialog_btn_proceed">Proceed</string>
+    <string name="permission_dialog_btn_cancel">Cancel</string>
+    <string name="btn_start_service">Start Service</string>
+    <string name="btn_stop_service">Stop Service</string>
+</resources>

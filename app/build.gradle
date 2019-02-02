@@ -1,0 +1,46 @@
+
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyPassword 'BADBOY'
+            keyAlias 'bloodybadboycreation';
+            storeFile file('D:/AndroidStudioProjects/Android Studio/BloodyBadboyCreation.jks')
+            storePassword 'BADBOY'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.bloodybadboycreation.floatingnetworkspeed"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName '1.0-beta'
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //  testCompile 'junit:junit:4.12'
+    /* compile('com.afollestad.material-dialogs:commons:0.8.4.2@aar') {
+                                transitive = true
+                            }*/
+}
